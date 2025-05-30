@@ -8,10 +8,9 @@
 
 </head>
 <body>
-
-    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
     <header class="main-nav" >
-        <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <nav class="main-nav" >
             <ul>
                 <a href="Accueil.html">Acceuil</a>
                 <a href="A propos.html">A propos</a>
@@ -23,8 +22,8 @@
     </header>
         <script>
             function toggleMenu() {
-                const header= document.querySelector(".main-nav");
-                header.classList.toggle('active');
+                const nav= document.querySelector(".main-nav");
+                nav.classList.toggle('active');
             }
         </script>
     
