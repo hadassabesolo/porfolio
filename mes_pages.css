@@ -1,0 +1,174 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+    padding: 0;
+    
+    color: black;
+    /* background-image: url(toph/ورق-مزخرف-للكتابه-6.webp); */
+    /* background-position: center; */
+    background-color: magenta;
+}
+header h1{
+    color:magenta;
+}
+
+header{
+    background-color: thistle;
+    color: white;
+    padding: 1px 20px;
+    display: flex; /*pour bien groupé l'entete et la taille*/
+    justify-content: space-between; /*pour renvoyer le menu droite*/
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:magenta;
+    font-weight: bold;
+    padding:5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    background-color: cornflowerblue;
+}
+
+main{
+    max-width: 1400px;  /*pour arranger la largeur(espace) que vas occuper les contenu*/
+    /* margin:45px auto; */
+    padding: 20px; /*ajoute de l'espace entre le contenue(phrase, images,...)*/
+    background-image: url(toph/ورق-مزخرف-للكتابه-6.webp);
+    background-position: center;
+    border-radius: 50px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    margin: 4px auto; /*pour crée une espace entre header et main*/
+}
+
+footer{
+    background-color:thistle ;
+    margin-top: 40px; /*pour mettre l' footer de main*/
+    
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+/* On va faire quelques arrangement */
+
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+form{
+    max-width:700px;
+    margin: 20px auto;
+    padding:20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    margin: auto;
+}
+
+/* la section se trouve a l'interieur du formulaire */
+form section{
+    max-width: 700px;
+    margin: 30px auto; /*ramene la section au centre en espacant*/
+    padding: 10px;
+    background-color: #f4f8ff;
+    border: 2px solid mediumorchid;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*l'ombrage*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form section h2{
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px; /*espace le titre des  autres elts*/
+
+}
+fieldset{
+    border: 1px solid whitesmoke; /*pour la coleur du cadrage*/
+    border-radius: 8px;
+    padding: 15px;/*aggrandit l'espace interne*/
+}
+legend{
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px; /*met de l'espace entre legend et fieldset*/
+
+}
+label{
+    display: block;
+    /*margin-top: 5px;*/ /*met l'espace entre le case et l'etiquette*/
+    text-align: left; /*pour ramener les etiquettes au coin*/
+
+}
+input[type="text"],
+input[type="text"],
+input[type="text"],
+textarea{
+    width: 100%; /*pour la largeur de case*/
+    padding: 2px; /*pour agrandire l'espace interne de case*/
+    box-sizing: border-box; /*pour faire entrer les lignes a l'interieur de case*/
+    border: 1px solid #ccc; /*la couleur du bordure*/
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+textarea{
+    height: 100px; /*pour aggrandir l'espace*/
+    resize: none; /*pour limiter le text*/
+
+}
+button{
+    background-color: #007bff;
+    color: #ccc;
+    padding: 12px; /*pour aggrandir l'espace interne */
+    border: none; /*pour enlever la ligne noir du bordure par defaut*/
+    border-radius: 6px; /*la structure du contour du bordure*/
+    font-size: 16px; /*la taille des ecrits*/
+    font-weight: bold; /*pour mettre le text en gras*/
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: red;
+   
+}
+
+#profil{
+    display: flex;
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    height:100% ;
+    object-fit:cover ;
+}

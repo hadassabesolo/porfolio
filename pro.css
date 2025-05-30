@@ -1,0 +1,64 @@
+
+body{
+    background-image: url(toph/ellycollection003_TP_V1.jpg);
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    
+}
+header{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    color: paleturquoise;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+    /* POUR ESPACER LE MENU */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: powderblue;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+a:hover{
+    background-color: slategrey;
+}
+
+
+.carte{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carte .Bien{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px purple;
+}
+
+
+
+
+
+    
+

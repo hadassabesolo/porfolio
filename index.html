@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro.css">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url(toph/1735375699656.jpg);
+      
+    }
+
+
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: black;
+      color: white;
+      padding: 10px 15px;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background:black;
+      padding:9px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav.active {
+        display: flex;
+      }
+    }
+
+
+    </style>
+</head>
+<body>
+     <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <nav class="main-nav">
+                <a href="Accueil.html">Acceuil</a>
+                <a href="A propos.html">A propos</a>
+                <!-- <li><a href="projet.html">Projet</a></li> -->
+                <a href="competence.html">competence</a>
+                <a href="contact.html">contact</a>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector(".main-nav");
+                nav.classList.toggle('active');
+            }
+        </script>
+        <!--<img src="c:\Users\lenovo 250\Documents\portfolio\repartitions\toph\file_00000000cd0061f7ae9fdc0e0a43921d_conversation_id=68050ab4-6b3c-800b-b39a-402bae73f326&message_id=272e514b-0f78-4b3a-9ceb-30c15bb4e11b (1).PNG" 
+         width="150" height="75"> -->
+        <!-- <h1>Hadassa</h1> -->
+
+    
+
+    
+
+    <main>
+        <div class="carte">
+            <p class="Bien">Hey! C'est Hadassa. <br> Tu veux voir ce que je fait d'habitude ?
+                <br> Choisis une page et entre dans mon monde . 
+                
+            </p> 
+            
+        </div>
+    </main>
+    
+</body>
+</html>
